@@ -85,7 +85,7 @@ YYKeyboardManager is provided under the MIT license. See LICENSE file for detail
 ---
 中文介绍
 ==============
-iOS 键盘监听管理工具累。<br/>
+iOS 键盘监听管理工具类。<br/>
 (该工具是从 [YYText](https://github.com/ibireme/YYText) 提取出来的独立组件)
 
 > ![demo](https://raw.github.com/ibireme/YYKeyboardManager/master/Demo/snapshot.gif
