@@ -32,13 +32,13 @@ Usage
 	// Get keyboard status
 	BOOL visible = manager.keyboardVisible;
 	CGRect frame = manager.keyboardFrame;
-	frame = [manager convertRect:rect toView:self.view];
+	frame = [manager convertRect:frame toView:self.view];
 	
 	// Track keyboard animation
 	[manager addObserver:self];
 	- (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
-	    CGRect fromFrame = transition.fromFrame;
-	    CGRect toFrame = transition.toFrame;
+	    CGRect fromFrame = [manager convertRect:transition.fromFrame toView:self.view];
+	    CGRect toFrame =  [manager convertRect:transition.toFrame toView:self.view];
 	    BOOL fromVisible = transition.fromVisible;
 	    BOOL toVisible = transition.toVisible;
 	    NSTimeInterval animationDuration = transition.animationDuration;
@@ -108,13 +108,13 @@ iOS 键盘监听管理工具类。<br/>
 	// 获取键盘当前状态
 	BOOL visible = manager.keyboardVisible;
 	CGRect frame = manager.keyboardFrame;
-	frame = [manager convertRect:rect toView:self.view];
+	frame = [manager convertRect:frame toView:self.view];
 	
 	// 监听键盘动画
 	[manager addObserver:self];
 	- (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
-	    CGRect fromFrame = transition.fromFrame;
-	    CGRect toFrame = transition.toFrame;
+	    CGRect fromFrame = [manager convertRect:transition.fromFrame toView:self.view];
+	    CGRect toFrame =  [manager convertRect:transition.toFrame toView:self.view];
 	    BOOL fromVisible = transition.fromVisible;
 	    BOOL toVisible = transition.toVisible;
 	    NSTimeInterval animationDuration = transition.animationDuration;
