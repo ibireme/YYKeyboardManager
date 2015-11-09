@@ -11,6 +11,8 @@ YYKeyboardManager <a href="#中文介绍">中文介绍</a>
 iOS utility class allows you to access keyboard view and track keyboard animation.<br/>
 (It was used by [YYText](https://github.com/ibireme/YYText))
 
+> ![demo](https://raw.github.com/ibireme/YYKeyboardManager/master/Demo/snapshot.gif
+)
 
 Compatibility
 ==============
@@ -85,6 +87,9 @@ YYKeyboardManager is provided under the MIT license. See LICENSE file for detail
 ==============
 iOS 键盘监听管理工具累。<br/>
 (该工具是从 [YYText](https://github.com/ibireme/YYText) 提取出来的独立组件)
+
+> ![demo](https://raw.github.com/ibireme/YYKeyboardManager/master/Demo/snapshot.gif
+)
 
 兼容性
 ==============
