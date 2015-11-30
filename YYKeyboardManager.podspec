@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = 'YYKeyboardManager'
   s.summary      = 'iOS utility class allows you to access keyboard view and track keyboard animation.'
-  s.version      = '0.9.0'
+  s.version      = '0.9.1'
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.authors      = { 'ibireme' => 'ibireme@gmail.com' }
   s.social_media_url = 'http://blog.ibireme.com'
