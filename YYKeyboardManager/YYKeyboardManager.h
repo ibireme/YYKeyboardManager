@@ -16,6 +16,7 @@ FOUNDATION_EXPORT double YYKeyboardManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char YYKeyboardManagerVersionString[];
 #endif
 
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  System keyboard transition information.
@@ -58,10 +59,10 @@ typedef struct {
 + (instancetype)defaultManager;
 
 /// Get the keyboard window. nil if there's no keyboard window.
-@property (nonatomic, readonly) UIWindow *keyboardWindow;
+@property (nullable, nonatomic, readonly) UIWindow *keyboardWindow;
 
 /// Get the keyboard view. nil if there's no keyboard view.
-@property (nonatomic, readonly) UIView *keyboardView;
+@property (nullable, nonatomic, readonly) UIView *keyboardView;
 
 /// Whether the keyboard is visible.
 @property (nonatomic, readonly, getter=isKeyboardVisible) BOOL keyboardVisible;
@@ -95,6 +96,8 @@ typedef struct {
  @param view A specified view or window (pass nil to convert for main window).
  @return The converted rect in specifeid view.
  */
-- (CGRect)convertRect:(CGRect)rect toView:(UIView *)view;
+- (CGRect)convertRect:(CGRect)rect toView:(nullable UIView *)view;
 
 @end
+
+NS_ASSUME_NONNULL_END
