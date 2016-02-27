@@ -50,7 +50,7 @@ Installation
 
 ### CocoaPods
 
-1. Add `pod "YYKeyboardManager"` to your Podfile.
+1. Add `pod 'YYKeyboardManager'` to your Podfile.
 2. Run `pod install` or `pod update`.
 3. Import \<YYKeyboardManager/YYKeyboardManager.h\>.
 
@@ -73,6 +73,11 @@ Documentation
 ==============
 Full API documentation is available on [CocoaDocs](http://cocoadocs.org/docsets/YYKeyboardManager/).<br/>
 You can also install documentation locally using [appledoc](https://github.com/tomaz/appledoc).
+
+
+Requirements
+==============
+This library requires `iOS 6.0+` and `Xcode 7.0+`.
 
 
 License
@@ -127,7 +132,7 @@ iOS 键盘监听管理工具类。<br/>
 
 ### CocoaPods
 
-1. 在 Podfile 中添加 `pod "YYKeyboardManager"`。
+1. 在 Podfile 中添加 `pod 'YYKeyboardManager'`。
 2. 执行 `pod install` 或 `pod update`。
 3. 导入 \<YYKeyboardManager/YYKeyboardManager.h\>。
 
@@ -149,6 +154,11 @@ iOS 键盘监听管理工具类。<br/>
 文档
 ==============
 你可以在 [CocoaDocs](http://cocoadocs.org/docsets/YYKeyboardManager/) 查看在线 API 文档，也可以用 [appledoc](https://github.com/tomaz/appledoc) 本地生成文档。
+
+
+系统要求
+==============
+该项目最低支持 `iOS 6.0` 和 `Xcode 7.0`。
 
 
 许可证
