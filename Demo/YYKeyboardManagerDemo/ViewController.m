@@ -57,7 +57,7 @@
 #pragma mark - @protocol YYKeyboardObserver
 
 - (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
-    [UIView animateWithDuration:transition.animationCurve delay:0 options:transition.animationOption animations:^{
+    [UIView animateWithDuration:transition.animationDuration delay:0 options:transition.animationOption animations:^{
         CGRect kbFrame = [[YYKeyboardManager defaultManager] convertRect:transition.toFrame toView:self.view];
         CGRect textframe = _textField.frame;
         textframe.size.width = kbFrame.size.width;
