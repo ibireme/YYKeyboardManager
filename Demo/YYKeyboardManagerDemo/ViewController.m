@@ -19,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIScrollView *sv = [UIScrollView new];
+    sv.frame = CGRectMake(12, 12, 150, 150);
+    sv.backgroundColor = [UIColor redColor];
+    sv.contentSize = CGSizeMake(500, 150);
+    [self.view addSubview:sv];
+    
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
     _button.frame = CGRectMake(0, 0, 80, 40);
     _button.center = CGPointMake(CGRectGetWidth(self.view.bounds) / 2, CGRectGetHeight(self.view.bounds) / 3);
@@ -37,6 +43,8 @@
     _textField.frame = frame;
     _textField.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     [self.view addSubview:_textField];
+    
+
     
     
     [[YYKeyboardManager defaultManager] addObserver:self];
