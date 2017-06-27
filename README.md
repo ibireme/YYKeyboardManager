@@ -3,8 +3,8 @@ YYKeyboardManager
 
 [![License MIT](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/ibireme/YYKeyboardManager/master/LICENSE)&nbsp;
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)&nbsp;
-[![CocoaPods](http://img.shields.io/cocoapods/v/YYKeyboardManager.svg?style=flat)](http://cocoapods.org/?q=YYKeyboardManager)&nbsp;
-[![CocoaPods](http://img.shields.io/cocoapods/p/YYKeyboardManager.svg?style=flat)](http://cocoapods.org/?q=YYKeyboardManager)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/v/YYKeyboardManager.svg?style=flat)](http://cocoapods.org/pods/YYKeyboardManager)&nbsp;
+[![CocoaPods](http://img.shields.io/cocoapods/p/YYKeyboardManager.svg?style=flat)](http://cocoadocs.org/docsets/YYKeyboardManager)&nbsp;
 [![Support](https://img.shields.io/badge/support-iOS%206%2B%20-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
 [![Build Status](https://travis-ci.org/ibireme/YYKeyboardManager.svg?branch=master)](https://travis-ci.org/ibireme/YYKeyboardManager)
 
@@ -16,34 +16,35 @@ iOS utility class allows you to access keyboard view and track keyboard animatio
 
 Compatibility
 ==============
-iPhone / iPad / iPod with iOS 6 / 7 / 8 / 9.
+iPhone / iPad / iPod with iOS 6~11.
 
 
 Usage
 ==============
+```objc
+// Get keyboard manager
+YYKeyboardManager *manager = [YYKeyboardManager defaultManager];
 	
-	// Get keyboard manager
-	YYKeyboardManager *manager = [YYKeyboardManager defaultManager];
+// Get keyboard view and window
+UIView *view = manager.keyboardView;
+UIWindow *window = manager.keyboardWindow;
 	
-	// Get keyboard view and window
-	UIView *view = manager.keyboardView;
-	UIWindow *window = manager.keyboardWindow;
+// Get keyboard status
+BOOL visible = manager.keyboardVisible;
+CGRect frame = manager.keyboardFrame;
+frame = [manager convertRect:frame toView:self.view];
 	
-	// Get keyboard status
-	BOOL visible = manager.keyboardVisible;
-	CGRect frame = manager.keyboardFrame;
-	frame = [manager convertRect:frame toView:self.view];
-	
-	// Track keyboard animation
-	[manager addObserver:self];
-	- (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
-	    CGRect fromFrame = [manager convertRect:transition.fromFrame toView:self.view];
-	    CGRect toFrame =  [manager convertRect:transition.toFrame toView:self.view];
-	    BOOL fromVisible = transition.fromVisible;
-	    BOOL toVisible = transition.toVisible;
-	    NSTimeInterval animationDuration = transition.animationDuration;
-	    UIViewAnimationCurve curve = transition.animationCurve;
-	}
+// Track keyboard animation
+[manager addObserver:self];
+- (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
+    CGRect fromFrame = [manager convertRect:transition.fromFrame toView:self.view];
+    CGRect toFrame =  [manager convertRect:transition.toFrame toView:self.view];
+    BOOL fromVisible = transition.fromVisible;
+    BOOL toVisible = transition.toVisible;
+    NSTimeInterval animationDuration = transition.animationDuration;
+    UIViewAnimationCurve curve = transition.animationCurve;
+}
+```
 
 Installation
 ==============
@@ -77,7 +78,7 @@ You can also install documentation locally using [appledoc](https://github.com/t
 
 Requirements
 ==============
-This library requires `iOS 6.0+` and `Xcode 7.0+`.
+This library requires `iOS 6.0+` and `Xcode 8.0+`.
 
 
 License
@@ -98,34 +99,35 @@ iOS 键盘监听管理工具类。<br/>
 
 兼容性
 ==============
-该项目能很好的兼容 iPhone / iPad / iPod，兼容 iOS 6 / 7 / 8 / 9，
+该项目能很好的兼容 iPhone / iPad / iPod，兼容 iOS 6~11，
 并且能很好的处理屏幕旋转。
 
 用法
 ==============
-	// 获取键盘管理器
-	YYKeyboardManager *manager = [YYKeyboardManager defaultManager];
+```objc
+// 获取键盘管理器
+YYKeyboardManager *manager = [YYKeyboardManager defaultManager];
 	
-	// 获取键盘的 view 和 window
-	UIView *view = manager.keyboardView;
-	UIWindow *window = manager.keyboardWindow;
+// 获取键盘的 view 和 window
+UIView *view = manager.keyboardView;
+UIWindow *window = manager.keyboardWindow;
 	
-	// 获取键盘当前状态
-	BOOL visible = manager.keyboardVisible;
-	CGRect frame = manager.keyboardFrame;
-	frame = [manager convertRect:frame toView:self.view];
+// 获取键盘当前状态
+BOOL visible = manager.keyboardVisible;
+CGRect frame = manager.keyboardFrame;
+frame = [manager convertRect:frame toView:self.view];
 	
-	// 监听键盘动画
-	[manager addObserver:self];
-	- (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
-	    CGRect fromFrame = [manager convertRect:transition.fromFrame toView:self.view];
-	    CGRect toFrame =  [manager convertRect:transition.toFrame toView:self.view];
-	    BOOL fromVisible = transition.fromVisible;
-	    BOOL toVisible = transition.toVisible;
-	    NSTimeInterval animationDuration = transition.animationDuration;
-	    UIViewAnimationCurve curve = transition.animationCurve;
-	}
-
+// 监听键盘动画
+[manager addObserver:self];
+- (void)keyboardChangedWithTransition:(YYKeyboardTransition)transition {
+    CGRect fromFrame = [manager convertRect:transition.fromFrame toView:self.view];
+    CGRect toFrame =  [manager convertRect:transition.toFrame toView:self.view];
+    BOOL fromVisible = transition.fromVisible;
+    BOOL toVisible = transition.toVisible;
+    NSTimeInterval animationDuration = transition.animationDuration;
+    UIViewAnimationCurve curve = transition.animationCurve;
+}
+```
 
 安装
 ==============
@@ -158,7 +160,7 @@ iOS 键盘监听管理工具类。<br/>
 
 系统要求
 ==============
-该项目最低支持 `iOS 6.0` 和 `Xcode 7.0`。
+该项目最低支持 `iOS 6.0` 和 `Xcode 8.0`。
 
 
 许可证
