@@ -15,7 +15,7 @@
 		D9045AC31F06A2770075FB54 /* YYKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKeyboardManager.h; sourceTree = "<group>"; };
 		D9045AC41F06A2770075FB54 /* YYKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKeyboardManager.m; sourceTree = "<group>"; };
 		D90545F01F06A23E00D946CB /* YYKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D90545F41F06A23E00D946CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D90545F41F06A23E00D946CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Framework/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +34,7 @@
 			children = (
 				D9045AC31F06A2770075FB54 /* YYKeyboardManager.h */,
 				D9045AC41F06A2770075FB54 /* YYKeyboardManager.m */,
+				D90545F41F06A23E00D946CB /* Info.plist */,
 			);
 			name = YYKeyboardManager;
 			path = ../YYKeyboardManager;
@@ -43,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				D9045AC21F06A2770075FB54 /* YYKeyboardManager */,
-				D90545F41F06A23E00D946CB /* Info.plist */,
 				D90545F11F06A23E00D946CB /* Products */,
 			);
 			sourceTree = "<group>";
