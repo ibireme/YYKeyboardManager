@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <YYKeyboardManager/YYKeyboardManager.h>
+#import "YYKeyboardManager.h"
 
 @interface ViewController () <YYKeyboardObserver>
 @property (nonatomic, strong) UITextField *textField;
@@ -19,11 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIScrollView *sv = [UIScrollView new];
-    sv.frame = CGRectMake(12, 12, 150, 150);
-    sv.backgroundColor = [UIColor redColor];
-    sv.contentSize = CGSizeMake(500, 150);
-    [self.view addSubview:sv];
     
     _button = [UIButton buttonWithType:UIButtonTypeCustom];
     _button.frame = CGRectMake(0, 0, 80, 40);
@@ -36,6 +31,7 @@
     
     _textField = [UITextField new];
     _textField.backgroundColor = [UIColor colorWithRed:0.791 green:0.861 blue:0.999 alpha:1.000];
+    _textField.placeholder = @" Tap to show keyboard. ";
     CGRect frame = CGRectZero;
     frame.size.width = self.view.frame.size.width;
     frame.size.height = 40;
@@ -44,7 +40,7 @@
     _textField.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     [self.view addSubview:_textField];
     
-
+    
     
     
     [[YYKeyboardManager defaultManager] addObserver:self];

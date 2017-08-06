@@ -3,243 +3,180 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D95246E51BCE4C7D001E9DC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D95246E41BCE4C7D001E9DC4 /* main.m */; };
-		D95246E81BCE4C7D001E9DC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D95246E71BCE4C7D001E9DC4 /* AppDelegate.m */; };
-		D95246EB1BCE4C7D001E9DC4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D95246EA1BCE4C7D001E9DC4 /* ViewController.m */; };
-		D95246EE1BCE4C7D001E9DC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95246EC1BCE4C7D001E9DC4 /* Main.storyboard */; };
-		D95246F01BCE4C7D001E9DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95246EF1BCE4C7D001E9DC4 /* Assets.xcassets */; };
-		D95246F31BCE4C7D001E9DC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95246F11BCE4C7D001E9DC4 /* LaunchScreen.storyboard */; };
-		D95247131BCE5632001E9DC4 /* YYKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D952470B1BCE5594001E9DC4 /* YYKeyboardManager.framework */; };
-		D95247141BCE5636001E9DC4 /* YYKeyboardManager.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D952470B1BCE5594001E9DC4 /* YYKeyboardManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D96891641F09024500ACB9F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D96891631F09024500ACB9F4 /* AppDelegate.m */; };
+		D96891671F09024500ACB9F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D96891661F09024500ACB9F4 /* ViewController.m */; };
+		D968916A1F09024500ACB9F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96891681F09024500ACB9F4 /* Main.storyboard */; };
+		D968916C1F09024500ACB9F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D968916B1F09024500ACB9F4 /* Assets.xcassets */; };
+		D968916F1F09024500ACB9F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D968916D1F09024500ACB9F4 /* LaunchScreen.storyboard */; };
+		D96891721F09024500ACB9F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D96891711F09024500ACB9F4 /* main.m */; };
+		D99DCC961F090277007143AB /* YYKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D99DCC951F090277007143AB /* YYKeyboardManager.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D952470A1BCE5594001E9DC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D95247061BCE5594001E9DC4 /* YYKeyboardManager.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D95246C81BCE4A5A001E9DC4;
-			remoteInfo = YYKeyboardManager;
-		};
-		D95247101BCE562E001E9DC4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D95247061BCE5594001E9DC4 /* YYKeyboardManager.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D9D418AD1BD0EACC00CD8EBF;
-			remoteInfo = YYKeyboardManager;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		D95247031BCE4DCE001E9DC4 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D95247141BCE5636001E9DC4 /* YYKeyboardManager.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		D95246E01BCE4C7D001E9DC4 /* YYKeyboardManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYKeyboardManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D95246E41BCE4C7D001E9DC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D95246E61BCE4C7D001E9DC4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D95246E71BCE4C7D001E9DC4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D95246E91BCE4C7D001E9DC4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D95246EA1BCE4C7D001E9DC4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D95246ED1BCE4C7D001E9DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D95246EF1BCE4C7D001E9DC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D95246F21BCE4C7D001E9DC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D95246F41BCE4C7D001E9DC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D95247061BCE5594001E9DC4 /* YYKeyboardManager.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YYKeyboardManager.xcodeproj; path = ../Framework/YYKeyboardManager.xcodeproj; sourceTree = "<group>"; };
+		D968915F1F09024500ACB9F4 /* YYKeyboardManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YYKeyboardManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96891621F09024500ACB9F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D96891631F09024500ACB9F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D96891651F09024500ACB9F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D96891661F09024500ACB9F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D96891691F09024500ACB9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D968916B1F09024500ACB9F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D968916E1F09024500ACB9F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D96891701F09024500ACB9F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D96891711F09024500ACB9F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D99DCC941F090277007143AB /* YYKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKeyboardManager.h; sourceTree = "<group>"; };
+		D99DCC951F090277007143AB /* YYKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKeyboardManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D95246DD1BCE4C7D001E9DC4 /* Frameworks */ = {
+		D968915C1F09024500ACB9F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95247131BCE5632001E9DC4 /* YYKeyboardManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D95246D71BCE4C7D001E9DC4 = {
+		D96891561F09024500ACB9F4 = {
 			isa = PBXGroup;
 			children = (
-				D95247061BCE5594001E9DC4 /* YYKeyboardManager.xcodeproj */,
-				D95246E21BCE4C7D001E9DC4 /* YYKeyboardManagerDemo */,
-				D95246E11BCE4C7D001E9DC4 /* Products */,
+				D99DCC931F090277007143AB /* YYKeyboardManager */,
+				D96891611F09024500ACB9F4 /* YYKeyboardManagerDemo */,
+				D96891601F09024500ACB9F4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D95246E11BCE4C7D001E9DC4 /* Products */ = {
+		D96891601F09024500ACB9F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D95246E01BCE4C7D001E9DC4 /* YYKeyboardManagerDemo.app */,
+				D968915F1F09024500ACB9F4 /* YYKeyboardManagerDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D95246E21BCE4C7D001E9DC4 /* YYKeyboardManagerDemo */ = {
+		D96891611F09024500ACB9F4 /* YYKeyboardManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D95246E61BCE4C7D001E9DC4 /* AppDelegate.h */,
-				D95246E71BCE4C7D001E9DC4 /* AppDelegate.m */,
-				D95246E91BCE4C7D001E9DC4 /* ViewController.h */,
-				D95246EA1BCE4C7D001E9DC4 /* ViewController.m */,
-				D95246E31BCE4C7D001E9DC4 /* Supporting Files */,
+				D96891621F09024500ACB9F4 /* AppDelegate.h */,
+				D96891631F09024500ACB9F4 /* AppDelegate.m */,
+				D96891651F09024500ACB9F4 /* ViewController.h */,
+				D96891661F09024500ACB9F4 /* ViewController.m */,
+				D96891681F09024500ACB9F4 /* Main.storyboard */,
+				D968916B1F09024500ACB9F4 /* Assets.xcassets */,
+				D968916D1F09024500ACB9F4 /* LaunchScreen.storyboard */,
+				D96891701F09024500ACB9F4 /* Info.plist */,
+				D96891711F09024500ACB9F4 /* main.m */,
 			);
 			path = YYKeyboardManagerDemo;
 			sourceTree = "<group>";
 		};
-		D95246E31BCE4C7D001E9DC4 /* Supporting Files */ = {
+		D99DCC931F090277007143AB /* YYKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
-				D95246F11BCE4C7D001E9DC4 /* LaunchScreen.storyboard */,
-				D95246EC1BCE4C7D001E9DC4 /* Main.storyboard */,
-				D95246EF1BCE4C7D001E9DC4 /* Assets.xcassets */,
-				D95246F41BCE4C7D001E9DC4 /* Info.plist */,
-				D95246E41BCE4C7D001E9DC4 /* main.m */,
+				D99DCC941F090277007143AB /* YYKeyboardManager.h */,
+				D99DCC951F090277007143AB /* YYKeyboardManager.m */,
 			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D95247071BCE5594001E9DC4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D952470B1BCE5594001E9DC4 /* YYKeyboardManager.framework */,
-			);
-			name = Products;
+			name = YYKeyboardManager;
+			path = ../YYKeyboardManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D95246DF1BCE4C7D001E9DC4 /* YYKeyboardManagerDemo */ = {
+		D968915E1F09024500ACB9F4 /* YYKeyboardManagerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D95246F71BCE4C7D001E9DC4 /* Build configuration list for PBXNativeTarget "YYKeyboardManagerDemo" */;
+			buildConfigurationList = D96891751F09024500ACB9F4 /* Build configuration list for PBXNativeTarget "YYKeyboardManagerDemo" */;
 			buildPhases = (
-				D95246DC1BCE4C7D001E9DC4 /* Sources */,
-				D95246DD1BCE4C7D001E9DC4 /* Frameworks */,
-				D95246DE1BCE4C7D001E9DC4 /* Resources */,
-				D95247031BCE4DCE001E9DC4 /* CopyFiles */,
+				D968915B1F09024500ACB9F4 /* Sources */,
+				D968915C1F09024500ACB9F4 /* Frameworks */,
+				D968915D1F09024500ACB9F4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D95247111BCE562E001E9DC4 /* PBXTargetDependency */,
 			);
 			name = YYKeyboardManagerDemo;
 			productName = YYKeyboardManagerDemo;
-			productReference = D95246E01BCE4C7D001E9DC4 /* YYKeyboardManagerDemo.app */;
+			productReference = D968915F1F09024500ACB9F4 /* YYKeyboardManagerDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D95246D81BCE4C7D001E9DC4 /* Project object */ = {
+		D96891571F09024500ACB9F4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = ibireme;
 				TargetAttributes = {
-					D95246DF1BCE4C7D001E9DC4 = {
-						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = GMUHB5RMVU;
+					D968915E1F09024500ACB9F4 = {
+						CreatedOnToolsVersion = 9.0;
 					};
 				};
 			};
-			buildConfigurationList = D95246DB1BCE4C7D001E9DC4 /* Build configuration list for PBXProject "YYKeyboardManagerDemo" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = D968915A1F09024500ACB9F4 /* Build configuration list for PBXProject "YYKeyboardManagerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = D95246D71BCE4C7D001E9DC4;
-			productRefGroup = D95246E11BCE4C7D001E9DC4 /* Products */;
+			mainGroup = D96891561F09024500ACB9F4;
+			productRefGroup = D96891601F09024500ACB9F4 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D95247071BCE5594001E9DC4 /* Products */;
-					ProjectRef = D95247061BCE5594001E9DC4 /* YYKeyboardManager.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
-				D95246DF1BCE4C7D001E9DC4 /* YYKeyboardManagerDemo */,
+				D968915E1F09024500ACB9F4 /* YYKeyboardManagerDemo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D952470B1BCE5594001E9DC4 /* YYKeyboardManager.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = YYKeyboardManager.framework;
-			remoteRef = D952470A1BCE5594001E9DC4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
-		D95246DE1BCE4C7D001E9DC4 /* Resources */ = {
+		D968915D1F09024500ACB9F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95246F31BCE4C7D001E9DC4 /* LaunchScreen.storyboard in Resources */,
-				D95246F01BCE4C7D001E9DC4 /* Assets.xcassets in Resources */,
-				D95246EE1BCE4C7D001E9DC4 /* Main.storyboard in Resources */,
+				D968916F1F09024500ACB9F4 /* LaunchScreen.storyboard in Resources */,
+				D968916C1F09024500ACB9F4 /* Assets.xcassets in Resources */,
+				D968916A1F09024500ACB9F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D95246DC1BCE4C7D001E9DC4 /* Sources */ = {
+		D968915B1F09024500ACB9F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D95246EB1BCE4C7D001E9DC4 /* ViewController.m in Sources */,
-				D95246E81BCE4C7D001E9DC4 /* AppDelegate.m in Sources */,
-				D95246E51BCE4C7D001E9DC4 /* main.m in Sources */,
+				D99DCC961F090277007143AB /* YYKeyboardManager.m in Sources */,
+				D96891671F09024500ACB9F4 /* ViewController.m in Sources */,
+				D96891721F09024500ACB9F4 /* main.m in Sources */,
+				D96891641F09024500ACB9F4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D95247111BCE562E001E9DC4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = YYKeyboardManager;
-			targetProxy = D95247101BCE562E001E9DC4 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		D95246EC1BCE4C7D001E9DC4 /* Main.storyboard */ = {
+		D96891681F09024500ACB9F4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D95246ED1BCE4C7D001E9DC4 /* Base */,
+				D96891691F09024500ACB9F4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		D95246F11BCE4C7D001E9DC4 /* LaunchScreen.storyboard */ = {
+		D968916D1F09024500ACB9F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D95246F21BCE4C7D001E9DC4 /* Base */,
+				D968916E1F09024500ACB9F4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -247,29 +184,39 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D95246F51BCE4C7D001E9DC4 /* Debug */ = {
+		D96891731F09024500ACB9F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -283,36 +230,46 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		D95246F61BCE4C7D001E9DC4 /* Release */ = {
+		D96891741F09024500ACB9F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -320,43 +277,33 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D95246F81BCE4C7D001E9DC4 /* Debug */ = {
+		D96891761F09024500ACB9F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YYKeyboardManagerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKeyboardManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D95246F91BCE4C7D001E9DC4 /* Release */ = {
+		D96891771F09024500ACB9F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = YYKeyboardManagerDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibireme.YYKeyboardManagerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -364,25 +311,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D95246DB1BCE4C7D001E9DC4 /* Build configuration list for PBXProject "YYKeyboardManagerDemo" */ = {
+		D968915A1F09024500ACB9F4 /* Build configuration list for PBXProject "YYKeyboardManagerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D95246F51BCE4C7D001E9DC4 /* Debug */,
-				D95246F61BCE4C7D001E9DC4 /* Release */,
+				D96891731F09024500ACB9F4 /* Debug */,
+				D96891741F09024500ACB9F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D95246F71BCE4C7D001E9DC4 /* Build configuration list for PBXNativeTarget "YYKeyboardManagerDemo" */ = {
+		D96891751F09024500ACB9F4 /* Build configuration list for PBXNativeTarget "YYKeyboardManagerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D95246F81BCE4C7D001E9DC4 /* Debug */,
-				D95246F91BCE4C7D001E9DC4 /* Release */,
+				D96891761F09024500ACB9F4 /* Debug */,
+				D96891771F09024500ACB9F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D95246D81BCE4C7D001E9DC4 /* Project object */;
+	rootObject = D96891571F09024500ACB9F4 /* Project object */;
 }
