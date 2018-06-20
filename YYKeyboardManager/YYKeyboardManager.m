@@ -409,6 +409,13 @@ static int _YYKeyboardViewFrameObserverKey;
         _fromFrame.size.height = trans.toFrame.size.height;
         _fromFrame.origin.x = trans.toFrame.origin.x;
         _fromFrame.origin.y = window.bounds.size.height;
+    } else if ((_notificationFromFrame.origin.y == window.frame.size.height) &&
+             ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait) &&
+             !CGRectEqualToRect(_fromFrame, _notificationToFrame)) {
+        _fromFrame.size.width = window.bounds.size.width;
+        _fromFrame.size.height = _notificationToFrame.size.height;
+        _fromFrame.origin.x = _notificationFromFrame.origin.x;
+        _fromFrame.origin.y = _notificationFromFrame.origin.y;
     }
     trans.fromFrame = _fromFrame;
     trans.fromVisible = _fromVisible;
